@@ -1,0 +1,1 @@
+sources = files('main.c', 'command_handler.c')
