@@ -1,1 +1,1 @@
-sources = files('main.c', 'command_handler.c')
+sources = files('main.c', 'argparser.c')

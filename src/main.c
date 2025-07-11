@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <ncurses.h>
-#include "nued.h"
-
-#define PROJECT_NAME "nued"
+#include "argparser.h"
 
 int main(int argc, char *argv[])
 {
