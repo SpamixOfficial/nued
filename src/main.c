@@ -5,6 +5,6 @@
 int main(int argc, char *argv[])
 {
     struct Flags flags = parse_args(argc, argv);
-    printf("Was help used? %s", flags.help ? "Yes" : "No");
+    printf("flags.help: %s", flags.help ? "true" : "false");
     return 0;
 }
