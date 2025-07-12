@@ -43,7 +43,7 @@ void help(char *pname, bool help) {
         // add shortcommand
         *(shortcommands_string + i) = commands[i].s;
     }
-    printf("usage: %s [-%s] FILE\n%s", pname, shortcommands_string, option_string);
+    printf("usage: %s [-%s] FILE\n\noptions:\n%s", pname, shortcommands_string, option_string);
     free(shortcommands_string);
     free(option_string);
 }
