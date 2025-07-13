@@ -20,14 +20,14 @@ void ncurses_init() {
 
 
 int main(int argc, char* argv[]) {
-    struct Flags flags = parse_args(argc, argv);
+    Flags flags = parse_args(argc, argv);
     if (flags.help) {
         return 0;
     }
     int ch;
     ncurses_init();
 
-    struct AppState app = {};
+    AppState app = {};
 
     getmaxyx(stdscr, app.max_y, app.max_x);
 

@@ -17,7 +17,7 @@ void backspace_handler(int* x, int* y, int max_x, int max_y) {
 }
 
 void arrow_handler(int arrow, int* x, int* y) {
-    // up and down keys
+    // Down key is 0402, KEY_RIGHT is 0405
     if (arrow - 0402 <= 1)
         *y += arrow == KEY_DOWN ? 1 : -1;
     else
@@ -27,7 +27,7 @@ void arrow_handler(int arrow, int* x, int* y) {
 }
 
 // Returns -1 if exit is desired, else 0
-int input_handler(struct AppState* app, int ch) {
+int input_handler(AppState* app, int ch) {
     switch (ch) {
         case ctrl('x'):
             return -1;

@@ -1,6 +1,6 @@
+#pragma once
 #include <ncurses.h>
 
-#pragma once
 
 // Color pair definitions
 #define DefaultColorPairN 1
@@ -16,6 +16,6 @@
 #define WarningColorPair COLOR_PAR(WarningColorPairN)
 
 
-struct AppState {
+typedef struct {
     int x,y, max_x, max_y;
-};
+} AppState;

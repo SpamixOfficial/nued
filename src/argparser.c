@@ -46,10 +46,10 @@ void help(char *pname, bool help) {
     free(option_string);
 }
 
-void argv_to_flags(struct Flags *flags, char *argv[]) {}
+void argv_to_flags(Flags *flags, char *argv[]) {}
 
-struct Flags parse_args(int argc, char *argv[]) {
-    struct Flags flags = {false};
+Flags parse_args(int argc, char *argv[]) {
+    Flags flags = {false};
     char *pname = argv[0];
 
     if (argc == 1) {

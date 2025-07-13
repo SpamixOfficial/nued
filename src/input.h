@@ -1,5 +1,4 @@
+#pragma once
 #include "nued.h"
 
-#pragma once
-
-int input_handler(struct AppState* app, int ch);
+int input_handler(AppState* app, int ch);

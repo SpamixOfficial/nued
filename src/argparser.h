@@ -1,10 +1,10 @@
-#include <stdbool.h>
 #pragma once
+#include <stdbool.h>
 
 #define PROJECT_NAME "nued"
-struct Flags
+typedef struct
 {
     bool help;
-};
+} Flags;
 
-struct Flags parse_args(int argc, char *argv[]);
+Flags parse_args(int argc, char *argv[]);
