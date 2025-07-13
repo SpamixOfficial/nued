@@ -1,6 +1,5 @@
 #include "argparser.h"
 
-#include <ncurses.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,8 +25,7 @@ void help(char *pname, bool help) {
     };
 
     size_t c_len = sizeof(commands) / sizeof(struct Command);
-    // should be enough!
-    char *option_string = calloc(2048, sizeof(char));
+    char *option_string = strdup("");
     char *shortcommands_string = calloc(c_len, sizeof(char));
 
     for (unsigned long i = 0; i < c_len; i++) {

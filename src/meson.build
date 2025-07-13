@@ -1,1 +1,1 @@
-sources = files('main.c', 'argparser.c')
+sources = files('main.c', 'argparser.c', 'input.c')
