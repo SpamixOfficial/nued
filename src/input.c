@@ -17,8 +17,12 @@ void backspace_handler(int* x, int* y, int max_x, int max_y) {
 }
 
 void arrow_handler(int arrow, int* x, int* y) {
-    *x = arrow-405 == 0 ? (*x)+1 : *x;
-    *y = arrow-402 == 0 ? (*y)+1 : *y;
+    // up and down keys
+    if (arrow - 0402 <= 1)
+        *y += arrow == KEY_DOWN ? 1 : -1;
+    else
+        *x += arrow == KEY_RIGHT ? 1 : -1;
+    
     move(*y, *x);
 }
 
